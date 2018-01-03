@@ -1,2 +1,2 @@
 # Leetcode
-刷Leetcode记录。
+刷Leetcode的记录。
