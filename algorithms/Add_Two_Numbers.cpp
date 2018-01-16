@@ -14,7 +14,7 @@ public:
         head_temp = head = (ListNode*) malloc(sizeof(ListNode));
         head -> next = NULL;
         while(l1_temp != NULL || l2_temp != NULL){
-        // (l1_temp != NULL && l2_temp != NULL) 写法复制
+        // (l1_temp != NULL && l2_temp != NULL) 写法复杂
             head_temp -> next = (ListNode*) malloc(sizeof(ListNode));
             head_temp = head_temp -> next;
             head_temp -> next = NULL;
