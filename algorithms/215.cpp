@@ -1,4 +1,3 @@
-/*
 // Partition method
 class Solution{
 public:
@@ -13,7 +12,7 @@ public:
             return 0;
         int flag = nums[begin], i = begin, j = end;
         while(i < j){
-            while(nums[j] >= flag && i < j)
+            while(nums[j] >= flag && i < j)  // 大的放右边
                 j--;
             nums[i] = nums[j];
             while(nums[i] < flag && i < j)
@@ -21,15 +20,14 @@ public:
             nums[j] = nums[i];
         }
         nums[i] =  flag;
-        if(end - i + 1 == k)
+        if(nums.size() - i == k)
             return nums[i];
-        else if(end - i + 1 < k) // 留左边
-            return findKthLargest(nums, begin, i - 1, k - end + i - 1);
+        else if(nums.size() - i < k) // 留左边
+            return findKthLargest(nums, begin, i - 1, k);
         else  // 留右边
             return findKthLargest(nums, i + 1, end, k);
     }
 };
-*/
 
 // heap method
 class Solution{
