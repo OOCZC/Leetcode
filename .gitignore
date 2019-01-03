@@ -1,5 +1,6 @@
 # Add by ooc
 test.cpp
+*.class
 
 # Prerequisites
 *.d
